@@ -1,0 +1,14 @@
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\BLL.dll
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\BLL.pdb
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\DAL.dll
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\Models.dll
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\DAL.pdb
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\Models.pdb
+C:\Users\1\Desktop\SQLHelper\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\SQLHelper\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\SQLHelper\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\1\Desktop\SQLHelper\BLL\obj\Debug\BLL.dll
+C:\Users\1\Desktop\SQLHelper\BLL\obj\Debug\BLL.pdb
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\DAL.dll.config
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\Utility.dll
+C:\Users\1\Desktop\SQLHelper\BLL\bin\Debug\Utility.pdb

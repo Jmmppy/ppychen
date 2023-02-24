@@ -1,0 +1,152 @@
+3/15  找到毕设需要看的学习资料
+百度C#菜鸟教程https://www.runoob.com/csharp/csharp-multithreading.html
+b站：项目实战：学生管理系统第一课、C#栏目https://space.bilibili.com/233542495
+、2021年最新C#/.Net 6 零基础到多项目实战大全(C#/SqlServer/MySQL/WPF/Winform/NetCore/HTML/CSS/JS)节选一些来看
+类面向对象，和项目实现
+
+难点：
+1.按键与数据库的连接
+
+
+3/16  环境vs2019C#&.Net，安装数据库SQL sever2014（sa 123 服务器名称：DESKTOP-52O598N\MSSQLSERVERCPY），创建数据库gdmu。
+问题：如何将数据库发到别人，这样不用多次重复
+3/17 三层架构开发项目和2021年最新C#/.Net 6 零基础到多项目实战大全(C#/SqlServer/MySQL/WPF/Winform/NetCore/HTML/CSS/JS)绩效考核项目
+3/18
+
+3/19 三层架构，和安排整个系统表单，流程ppt的安排
+https://blog.csdn.net/happyniceyq/article/details/50722993
+
+3/20 设计三层架构添加引用
+3/21  
+3/22 对系统所用的表，进行讨论、确定、建立数据库和相应的表单；
+3/23 根据系统需求完成，三层架构模板、三层架构设计；
+3/24
+3/25
+3/26 
+3/27
+3/28
+3/29
+3/30
+
+
+
+4/1
+4/2
+4/3 
+4/4
+4/5
+4/6
+4/7 
+4/8
+4/9
+4/10 周日完成，多表连接isForm的子界面增加了筛选的控件，两个日期时钟的datatimePrint，左连接。还是查询、查询后要新建临时Models表来借助新的数据。
+写了，mySQlhelper类中的两个方法（1. 对查询的返回记录的 2. 对非查询返回的是处理了多少条记录的）。
+
+4/11 完成对isForm的子界面中的筛选功能。窗体的*****_Load()方法是全局的，不用到类的初始化那里进行定义全局变量     【时间筛选还没做——》1. 如何做，是写sql语句 2. 怎么融合到按照姓名筛选中】【跟踪当前时间变化的--完成】、完成treeview观察者和事件委托，选择了树形菜单是运行，当鼠标到其他地方也不会消失
+4/12 完成 treeview 选中跟换子窗体（B站具体视频），窗体缓存和多窗体切换。
+
+控制窗体的隐藏和显示：this.hide();                                      对应在新窗体中，按钮控制（事件触发）
+if(新窗体对象.ShowDialog()==DialogResult.OK)                             this.close();
+	this.Show();				           this.DialogResult = DialogResult.OK;
+
+{https://blog.csdn.net/weixin_30674525/article/details/99110769?utm_source=app&app_version=5.2.0}
+患者卡片式的研究，临时表添加了isSelect字段（默认是false）来判断是否选中。
+4/13 
+4/14 这连天主要完成患者卡片的设计，涉及【Control与Controls 】【显示数据】【隐藏控件】【翻页操作】
+{主要参考：https://www.cnblogs.com/winformasp/articles/11865326.html、https://www.cnblogs.com/hjxzjp/p/7678641.html、
+http://www.liangshunet.com/ca/201403/286434593.htm、
+http://www.manongjc.com/detail/23-rpsdhrdwzqhxfwh.html、
+}
+1. this.Controls，就是把form上的每一个控件遍历一次。由于form上的每一个控件都继承于 Control类，这里一般用在 foreach(Control control in this.Controls )句型里面，是遍历form上的每个控件元素，把每个当前控件装箱成 control实例，进行操作。
+
+
+4/15 完整完成患者卡片的设计
+4/16 
+4/17 双击datagriview一行的显示具体信息的界面，涉及的界面之间的参数传递；
+完整完成了list的先按照【时间】排序在显示；
+
+4/18
+4/19
+4/21 对手术申请模块的涉及：数据库的表录入，界面的安排，颜色的搭配。
+对手术访视模块的涉及：预设计，最短路线的安排【迪杰斯特拉算法】【弗洛伊德算法】 
+思想的完善。进一步对路线推荐界面的优化，最大智能选择3个患者。
+患者房间号——哈希——数字------算法------——数字——哈希——房间号：作了两个哈希
+
+4/22 对手术访视模块的涉及：完成了取一个、两个、三个的最短路径的安排【弗洛伊德算法】 ，也考虑了回到原点的操作。
+思想：涉及完成弗洛伊德算法类【class Floyd_algorithm】、用一个哈希表{“两个点”-->class weight_path类 它有两个属性weight和path}存储算法的结果，写根据两个点的函数（本质:在哈希中查找）。
+回到界面Form_Route：拿到选择的房间号转化为数字进行分类（只有一个患者时、只有两个患者时、只有三个患者时）
+在三个患者时：多值取最小用到存储进列表，然后用Min（）方法；
+多字符串连接，采用$"{} kijka{}"
+IsForm2界面的优化：点击确定后、点击取消，8个panel窗体的恢复背景颜色【this.Controls】；//列表清空，关闭窗口的问题。
+
+4/23  完成了isForm4的界面操作
+涉及：在一张表中插入另一张表；表设置自曾（从1开始，所以if = 0就是没有插入。再另多设置一个字段bool（对应0，1 ；这样方便在dateGriView中设置条件））
+双击dateGriView后，判断是否录入。
+if yes：显示之前录入的内容，这次可更改
+else：	插入新记录在visit_result表，跟新到ss_visit表
+关闭双击后的界面，跟新查询。
+
+4/24 完成手术申请下拉框的录入
+按钮的颜色修改
+
+5/5 设置创建会议的问题：一、版本：应该用VS2022版本加上.Net 4.0的框架。完成。
+二、需完成的任务：
+1.创建会议=预约会议=新加一条会议表，2.会议表更新到主界面
+3.提前5分钟在屏幕的下边缘小框提醒，（可以直接进入，和延后【假的】），这里要完成线程不断的查找当前时间与会议表中的那一条记录匹配。
+
+5/6
+5/7 （一）主界面的会议显示：完成dataGriView的分页功能。https://blog.csdn.net/swjian1997/article/details/83663333
+思路：1. 先把之前获取的Listt[table]对象转化为DataTable格式。使用到工具类中的List_To_Table类中的泛型转化。
+2.  录入完成分页的前提，不用this.dgv_metting.DataSource =的方法了。
+3.  复制LoadPage方法，更改其中的对象命名和for循环
+4.  复制分页控件的功能。
+
+（二）IsForm1 界面的患者信息显示：完成了dataGriView的分页功能和筛选后的分页功能。
+思路：1. 先是load方法的分页方法与上面同
+2. 筛选后cur_ss_visitTable_.FindAll的列表对象【列表的复制】方法。
+3. 把之前获取的Listt[table]对象转化为DataTable格式。使用到工具类中的List_To_Table类中的泛型转化
+4. 判断是否是0条记录 if是就不操作
+5. 复制LoadPage方法，更改其中的对象命名和for循环
+6. 复制分页控件的功能。
+（三）IsForm4 界面的是否录入显示：
+要注意for循环的对应问题。
+（四）设置timer，2s种查找一次是否在5分钟以内。if是，提示窗口【Form_mettingUp】进入会议，挂起（不做）。当选择进入会议，关闭提示窗口、把这条记录的isMetting设置为true、更新会议显示，进入会议窗口【Form_mettingOn】。
+
+5/8 完成了会议界面（Form1）的大概。
+思想：
+https://blog.csdn.net/weixin_42546773/article/details/116990460
+https://blog.csdn.net/weixin_44996090/article/details/108402374
+https://download.csdn.net/download/cs_ghy/7957549?spm=1001.2014.3001.5506
+
+实现：
+1. 能够打开本机视频、打开录音，
+2. 能够进行拍照，取一帧图片，并且保存。能够进行结束录音，保存wav音频文件。
+3. 能够进行实时语音识别，但效果有点差。
+
+
+5/9 把会议显示放在了用户点击访视系统后二点访视库目录中。当用户点击访视系统时，就已经创建isForm窗体
+也就从此刻进行不断地计算（每个两秒去查询一下是否到达预约会议的时间）
+——————？但是那个datagriview也是两秒中更新，所以那个分页可能有点问题。
+
+多界面共用登录成功的值。
+https://blog.csdn.net/weixin_34418883/article/details/85828491?spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-85828491-blog-112517363.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-85828491-blog-112517363.pc_relevant_default&utm_relevant_index=25
+
+在SQL Sever的会议表，增加了所属的访视医生iD。
+思想：记录了创建该会议的访视医生是谁，然后在他登录那里的访视系统也只显示的是他创建的会议记录。
+注意是否登录对象所对应的他创建的会议记录为空时，报错！解决了
+
+
+
+
+
+
+
+
+
+
+
+
+
+判断列表转化为数组的长度如果是0，什么都不做，非0才给到dataGriView
+ /10
+3/15   

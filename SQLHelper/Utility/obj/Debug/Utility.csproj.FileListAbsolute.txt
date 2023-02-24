@@ -1,0 +1,6 @@
+C:\Users\1\Desktop\SQLHelper\Utility\bin\Debug\Utility.dll
+C:\Users\1\Desktop\SQLHelper\Utility\bin\Debug\Utility.pdb
+C:\Users\1\Desktop\SQLHelper\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\SQLHelper\Utility\obj\Debug\Utility.dll
+C:\Users\1\Desktop\SQLHelper\Utility\obj\Debug\Utility.pdb
+C:\Users\1\Desktop\SQLHelper\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
